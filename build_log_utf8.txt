@@ -1,0 +1,79 @@
+﻿
+> vision-ai@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+node.exe : 
+At C:\Program Files\nodejs\npm.ps1:29 char:3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteExc 
+   eption
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Failed to compile.
+
+./app/dashboard/analytics/page.tsx
+46:8  Warning: React Hook useEffect has a missing dependency: 
+'supabase'. Either include it or remove the dependency array.  
+react-hooks/exhaustive-deps
+
+./app/dashboard/history/page.tsx
+5:45  Error: 'MoreVertical' is defined but never used.  
+@typescript-eslint/no-unused-vars
+7:16  Error: 'CardContent' is defined but never used.  
+@typescript-eslint/no-unused-vars
+11:44  Error: Unexpected any. Specify a different type.  
+@typescript-eslint/no-explicit-any
+30:8  Warning: React Hook useEffect has a missing dependency: 
+'supabase'. Either include it or remove the dependency array.  
+react-hooks/exhaustive-deps
+113:94  Error: Unexpected any. Specify a different type.  
+@typescript-eslint/no-explicit-any
+
+./app/dashboard/page.tsx
+5:45  Error: 'TrendingUp' is defined but never used.  
+@typescript-eslint/no-unused-vars
+19:48  Error: Unexpected any. Specify a different type.  
+@typescript-eslint/no-explicit-any
+55:8  Warning: React Hook useEffect has a missing dependency: 
+'supabase'. Either include it or remove the dependency array.  
+react-hooks/exhaustive-deps
+
+./app/dashboard/settings/page.tsx
+4:10  Error: 'Settings' is defined but never used.  
+@typescript-eslint/no-unused-vars
+4:20  Error: 'User' is defined but never used.  
+@typescript-eslint/no-unused-vars
+4:26  Error: 'Shield' is defined but never used.  
+@typescript-eslint/no-unused-vars
+4:34  Error: 'Bell' is defined but never used.  
+@typescript-eslint/no-unused-vars
+
+./app/dashboard/upload/page.tsx
+3:10  Error: 'useEffect' is defined but never used.  
+@typescript-eslint/no-unused-vars
+56:27  Error: 'storageData' is assigned a value but never used.  
+@typescript-eslint/no-unused-vars
+85:23  Error: Unexpected any. Specify a different type.  
+@typescript-eslint/no-explicit-any
+
+./app/dashboard/webcam/page.tsx
+5:18  Error: 'AnimatePresence' is defined but never used.  
+@typescript-eslint/no-unused-vars
+8:16  Error: 'CardContent' is defined but never used.  
+@typescript-eslint/no-unused-vars
+15:50  Error: Unexpected any. Specify a different type.  
+@typescript-eslint/no-explicit-any
+
+./lib/supabase/middleware.ts
+20:58  Error: 'options' is defined but never used.  
+@typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: 
+https://nextjs.org/docs/basic-features/eslint#disabling-rules
