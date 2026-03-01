@@ -3,7 +3,7 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import Webcam from "react-webcam";
 import { motion } from "framer-motion";
-import { Camera, StopCircle, RefreshCcw, Cpu, Video, Brain, Languages, Sparkles, CheckCircle2, Save, Volume2, Square } from "lucide-react";
+import { Camera, StopCircle, RefreshCcw, Cpu, Video, Brain, Languages, Sparkles, CheckCircle2, Save, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -47,7 +47,7 @@ export default function WebcamPage() {
     const [error, setError] = useState<string | null>(null);
     const [isSaving, setIsSaving] = useState(false);
     const [hasSaved, setHasSaved] = useState(false);
-    const { speak, stop, isSpeaking } = useSpeech();
+    const { speak } = useSpeech();
 
     const handleDevices = useCallback((mediaDevices: MediaDeviceInfo[]) => {
         const videoDevices = mediaDevices.filter(({ kind }) => kind === "videoinput");

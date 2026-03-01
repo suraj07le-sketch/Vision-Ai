@@ -47,7 +47,7 @@ export default function SettingsPage() {
         }
 
         fetchProfile();
-    }, []);
+    }, [supabase]);
 
     const [isEditing, setIsEditing] = useState(false);
 

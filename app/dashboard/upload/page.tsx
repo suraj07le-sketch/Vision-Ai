@@ -28,7 +28,7 @@ export default function UploadPage() {
         deep_info?: string;
         examples?: string[];
     } | null>(null);
-    const { speak, isSpeaking } = useSpeech();
+    const { speak } = useSpeech();
     const supabase = createClient();
 
     const fileToBase64 = (file: File): Promise<string> => {
@@ -76,7 +76,7 @@ export default function UploadPage() {
             const fileName = `${Math.random()}.${fileExt}`;
             const filePath = `uploads/${fileName}`;
 
-            const { error: storageError } = await supabase.storage
+            await supabase.storage
                 .from('detections')
                 .upload(filePath, file);
 
